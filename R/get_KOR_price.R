@@ -57,7 +57,7 @@ get_KOR_price = function(src = "naver") {
 
         tryCatch({
           url = paste0("https://fchart.stock.naver.com/sise.nhn?symbol="
-                       ,name,"&timeframe=day&count=1000&requestType=0")
+                       ,name,"&timeframe=day&count=3700&requestType=0")
 
           data = GET(url) %>%
             read_html %>%
